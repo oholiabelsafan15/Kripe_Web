@@ -1,0 +1,353 @@
+/* Basic styles */
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Navbar tetap */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #3b4a1b; /* Warna background yang diinginkan */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Menambahkan shadow */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin-right: 400px;
+    margin-left: 130px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+.sign-in {
+    background-color: #fff;
+    color: #3b4a1b;
+    padding: 8px 16px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 170px;
+}
+
+/* Hero section styles */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    background-color: #fff;
+}
+
+.hero-text h1 {
+    font-size: 140px;
+    color: #3b4a1b;
+    font-weight: bold;
+}
+
+.hero-text p {
+    font-size: 25px;
+    color: #888;
+    margin-top: 20px;
+    max-width: 400px;
+}
+
+.hero-image img {
+    width: 600px;
+    border-radius: 10px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+/* Popup styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.popup-content h2 {
+    font-size: 24px;
+    color: #4c5b30;
+    text-align: center;
+}
+
+.popup-content input,
+.popup-content button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+.popup-content button {
+    background-color: #4c5b30;
+    color: #fff;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.popup-content button:hover {
+    background-color: #3b4a1b;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.login-link, .signup-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.login-link a, .signup-link a {
+    color: #4c5b30;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover, .signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Products Section */
+.products-section {
+    padding: 50px 10%;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.products-section h1 {
+    font-size: 36px;
+    color: #4c5b30;
+    margin-bottom: 70px;
+    margin-top: 30px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.product-card {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-card h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 16px;
+    color: #888;
+}
+
+.buy-btn {
+    background-color: #4c5b30;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.buy-btn:hover {
+    background-color: #3b4a1b;
+}
+
+.payment-method {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Payment Success Popup */
+.success-icon {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+#payment-success-popup .popup-content {
+    text-align: center;
+}
+
+#payment-success-popup h2 {
+    color: #4c5b30;
+    font-size: 24px;
+}
+
+#payment-success-popup p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#payment-success-popup button {
+    background-color: #4c5b30;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#payment-success-popup button:hover {
+    background-color: #3b4a1b;
+}
+
+.quantity-selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.quantity-btn {
+    background-color: #4c5b30;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 16px;
+    width: 40px; /* Same width for consistency */
+}
+
+.quantity-btn:hover {
+    background-color: #3b4a1b;
+}
+
+.quantity-selector input {
+    width: 40px;
+    text-align: center; /* Center the text inside the input */
+    border: 1px solid #ddd;
+    margin: 0 5px; /* Adjust margin to align better */
+    padding: 5px 0; /* Add padding for vertical centering */
+    box-sizing: border-box; /* Ensure padding doesn't affect total width */
+}
+
+
+.payment-methods {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.payment-option {
+    width: 80px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.payment-option:hover {
+    transform: scale(1.1);
+}
+
+.payment-option {
+    opacity: 0.5; /* All options are dimmed by default */
+    transition: opacity 0.3s ease; /* Smooth transition when dimming/highlighting */
+    border: none; /* Removes the border */
+    outline: none; /* Removes any outline that might appear on focus */
+}
+
+.payment-option.selected {
+    opacity: 1; /* The selected option is fully highlighted */
+}
+/* About Us Section Fix */
+.about-us-section {
+    padding: 100px 10%; /* Mengatur jarak dari atas dan samping */
+    background-color: #3b4a1b; /* Warna background abu-abu terang */
+    color: white; /* Warna teks putih untuk kontras */
+    text-align: center; /* Mengatur teks agar berada di tengah */
+}
+
+.about-us-section h1 {
+    color: #ffffff;
+    font-size: 3rem; /* Ukuran font untuk judul */
+    margin-bottom: 50px; /* Jarak antara judul dan deskripsi */
+}
+
+.about-us-section p {
+    font-size: 1.2rem; /* Ukuran font untuk deskripsi */
+    line-height: 1.6; /* Jarak antarbaris untuk deskripsi */
+    max-width: 800px; /* Maksimal lebar untuk deskripsi */
+    margin: 0 auto; /* Mengatur deskripsi berada di tengah di bawah judul */
+    margin-top: 15px;
+    text-align: justify;
+}
